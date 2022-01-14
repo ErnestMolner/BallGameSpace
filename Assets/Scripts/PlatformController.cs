@@ -11,7 +11,6 @@ public class PlatformController : MonoBehaviour
 
 
     [SerializeField] private GameObject pointA;
-    [SerializeField] private GameObject pointB;
     private Vector3 destination;
     [SerializeField] private int speed = 5;
 
