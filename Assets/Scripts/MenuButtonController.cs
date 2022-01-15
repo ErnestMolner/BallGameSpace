@@ -44,7 +44,7 @@ public class MenuButtonController : MonoBehaviour
             keyDown = false;
         }
 
-        if((index == 0) and (Input.GetKeyDown(KeyCode.Return)))
+        if((index == 0) && (Input.GetKeyDown(KeyCode.Return)))
             SceneManager.LoadScene(sceneName);
 
     }
