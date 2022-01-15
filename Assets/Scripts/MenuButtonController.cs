@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuButtonController : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class MenuButtonController : MonoBehaviour
     [SerializeField] bool keyDown;
     [SerializeField] int maxIndex;
     public AudioSource audioSource;
+    public string sceneName;
+
 
     // Start is called before the first frame update
     void Start()
@@ -35,8 +38,14 @@ public class MenuButtonController : MonoBehaviour
                 }
                 keyDown= true;
             }
-        }else{
+        }
+        else
+        {
             keyDown = false;
         }
+
+        if((index == 0) and (Input.GetKeyDown(KeyCode.Return)))
+            SceneManager.LoadScene(sceneName);
+
     }
 }

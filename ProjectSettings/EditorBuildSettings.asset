@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StartMenu.unity
+    guid: 07eb645ae3475412a90e88d835142291
+  - enabled: 1
+    path: Assets/SpaceSkies Free/Demo/DemoScene.unity
+    guid: 47cd513b8c4397e4ca272a1ff269d933
   m_configObjects: {}
