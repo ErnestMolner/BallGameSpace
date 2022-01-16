@@ -10,6 +10,7 @@ public class MenuButtonController : MonoBehaviour
     [SerializeField] int maxIndex;
     public AudioSource audioSource;
     public string sceneName;
+    public string sceneName1;
 
 
     // Start is called before the first frame update
@@ -46,6 +47,9 @@ public class MenuButtonController : MonoBehaviour
 
         if((index == 0) && (Input.GetKeyDown(KeyCode.Return)))
             SceneManager.LoadScene(sceneName);
-
+        if((index == 1) && (Input.GetKeyDown(KeyCode.Return)))
+            SceneManager.LoadScene(sceneName1);
+        if((index == 2) && (Input.GetKeyDown(KeyCode.Return)))
+            Application.Quit();
     }
 }

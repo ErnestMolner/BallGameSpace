@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuButton : MonoBehaviour
 {
     [SerializeField] MenuButtonController menuButtonController;
     [SerializeField] Animator animator;
     [SerializeField] AnimatorFunctions animatorFunctions;
-    [SerializeField] int thisIndex;
+    public int thisIndex;
+    //public string thisScene;
 
     // Update is called once per frame
     void Update()
