@@ -9,14 +9,12 @@ public class PlatformController : MonoBehaviour
     private int listSize;
     private int index = 0;
 
-    [SerializeField] private GameObject pointA;
-    private Vector3 destination;
     [SerializeField] private int speed = 5;
     // Start is called before the first frame update
     void Start()
     {
      listSize = waypoints.Count;
-     destination = pointA.transform.position;   
+  
     }
 
     // Update is called once per frame
